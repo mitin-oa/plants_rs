@@ -16,43 +16,59 @@ html {
     margin: 0 auto;
 }
 
+/* Header styles start*/
+
 .header {
     position: absolute;
     width: 1440px;
     height: 134px;
     left: 0px;
     top: 0px;
-    background: #EDF2EC;
+    background:  #EDF2EC;
 }
 
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
+.header_wrapper {
     width: 1220px;
     height: 50px;
-    left: 111px;
-    top: 42px;
+    margin-left: 111px;
+    margin-top: 42px;
+    background:  #EDF2EC;
 }
 
-.nav {
-    position: absolute;
+.header_nav {
+    position: fixed;
     width: 452px;
     height: 50px;
     left: 879px;
     top: 42px;
 }
 
-.header_nav {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
-    color: #010201;
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.logo {
+.nav_item {
+    margin-right: 46px;
+}
+
+.nav_item:last-child {
+    margin-right: 0;
+}
+
+.nav_link {
+    font-family: 'Inika';
+    font-size: 16px;
+
+    color: #010201;
+    text-decoration: none;
+}
+
+.nav_link:hover, .nav_link:focus, .nav_link:active {
+    opacity: .75;
+}
+
+.header_logo {
     position: absolute;
     width: 79.17px;
     height: 21.04px;
@@ -60,30 +76,267 @@ html {
     top: 52px;
 }
 
-.header_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
+.logo {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+/* Header styles end*/
+
+/* Welcome styles starts*/
+
+.leafs {
+    position: absolute;
+    width: 448.8px;
+    height: 407.36px;
+    left: 109px;
+    top: 62px; 
 }
 
 .welcome {
     padding-top: 126px;
+    position: absolute;
+    width: 1440px;
+    height: 532px;
+    left: 0px;
+    top: 134px;
+    background: #EDF2EC;
+}
+
+.welcome_section {
+    position: absolute;
+    width: 549px;
+    height: 340px;
+    left: 782px;
+    top: 98px;
 }
 
 .welcome_title {
-    max-width: 525px;
+    
+    width: 549px;
+    height: 101px;
+    left: 782px;
+    top: 98px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
     line-height: 50px;
-    color: rgb(17, 49, 94);
-    margin-bottom: 48px;
+    color: #717171;
 }
+
 .welcome_subtitle {
-    max-width: 525px;
-    color: #010201;
-    font-size: 16px;
-    line-height: 24px;
+    width: 525.44px;
+    height: 105px;
+    left: 782px;
+    top: 241px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
 }
+
+.btn_learn_more {
+    position: absolute;
+    width: 158px;
+    height: 44px;
+    left: 782px;
+    top: 394px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+}
+
+.btn_learn_more_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+/* Welcome styles end*/
+
+/* About styles starts*/
+
+.about {
+    position: absolute;
+    width: 1440px;
+    height: 666px;
+    left: 0px;
+    top: 666px;
+    background: #FFFFFF;
+}
+
+.about_section {
+    position: absolute;
+    width: 1222px;
+    height: 479px;
+    left: 109px;
+    top: 93px;
+}
+
+.about_us_section {
+    width: 605px;
+    height: 350px;
+    left: 109px;
+    top: 161px;
+}
+
+.about_title {
+    position: absolute;
+    width: 463px;
+    height: 102px;
+    left: 109px;
+    top: 161px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.about_subtitle {
+    position: absolute;
+    width: 605px;
+    height: 208px;
+    left: 109px;
+    top: 303px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+.houseplant_1 {
+    position: absolute;
+    width: 464px;
+    height: 479px;
+    left: 867px;
+    top: 93px;
+    
+}
+
+/* About styles end*/
+
+/* Service styles starts*/
+
+.service {
+    position: absolute;
+    width: 1440px;
+    height: 1300px;
+    left: 0px;
+    top: 1332px;
+    background: #EDF2EC;
+}
+
+.service_title {
+    position: absolute;
+    width: 306px;
+    height: 94px;
+    left: 109px;
+    top: 40px;
+    
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    
+    color: #499A18; 
+}
+
+.services_btn_1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 161px;
+    height: 50px;
+    left: 557px;
+    top: 69px;
+
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+
+.services_btn_2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 161px;
+    height: 50px;
+    left: 756px;
+    top: 69px;
+    
+    border: 1px solid #E06733;
+    border-radius: 5px; 
+}
+.services_btn_3 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 161px;
+    height: 50px;
+    left: 955px;
+    top: 69px;
+
+    border: 1px solid #E06733;
+    border-radius: 5px; 
+}
+
+.btn_service_text {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+}
+
+.service_item_1 {
+    position: absolute;
+    width: 330px;
+    height: 450px;
+    left: 109px;
+    top: 224px;
+}
+
+.service_item_1_picture {
+    width: 329px;
+    height: 350px;
+    left: 110px;
+    top: 224px;
+
+    background: url(pexels-frank-meriño-3612089.jpg);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service_item_1_title {
+    
+    width: 120px;
+    height: 24px;
+    left: 214px;
+    top: 584px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+}
+
+/* Service styles ends*/
